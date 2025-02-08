@@ -1,6 +1,14 @@
 -- Booting the library
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
+ -- Discord notification
+ Rayfield:Notify({
+   Title = "Join the discord for key!",
+   Content = "6XbyH95VPy",
+   Duration = 25,
+   Image = "folder-key",
+})
+
 -- Creating a window
 local Window = Rayfield:CreateWindow({
     Name = "FTFF Hub",
@@ -45,12 +53,4 @@ local Window = Rayfield:CreateWindow({
    Callback = function(Value)
       loadstring(game:HttpGet("https://raw.githubusercontent.com/funthingsforfun/slap-battles/refs/heads/main/main"))()
    end,
-})
-
- -- Discord notification
- Rayfield:Notify({
-   Title = "Join the discord for key!",
-   Content = "6XbyH95VPy",
-   Duration = 25,
-   Image = "folder-key",
 })
