@@ -5,7 +5,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 Rayfield:Notify({
    Title = "Join the discord for key!",
    Content = "6XbyH95VPy",
-   Duration = 13.5,
+   Duration = 50,
    Image = "folder-key",
 })
 
