@@ -35,14 +35,6 @@ local Window = Rayfield:CreateWindow({
        Key = {"https://raw.githubusercontent.com/funthingsforfun/yek-reverse/refs/heads/main/lol"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
-
- -- Discord notification
-Rayfield:Notify({
-   Title = "Join the discord for key!",
-   Content = "6XbyH95VPy",
-   Duration = 25,
-   Image = "folder-key",
-})
  
  -- Creating the script tab
  local ScriptTab = Window:CreateTab("Scripts", "code-2") -- Title, Image
@@ -53,4 +45,12 @@ Rayfield:Notify({
    Callback = function(Value)
       loadstring(game:HttpGet("https://raw.githubusercontent.com/funthingsforfun/slap-battles/refs/heads/main/main"))()
    end,
+})
+
+ -- Discord notification
+ Rayfield:Notify({
+   Title = "Join the discord for key!",
+   Content = "6XbyH95VPy",
+   Duration = 25,
+   Image = "folder-key",
 })
