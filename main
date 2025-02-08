@@ -1,14 +1,6 @@
 -- Booting the library
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
--- Discord notification
-Rayfield:Notify({
-   Title = "Join the discord for key!",
-   Content = "6XbyH95VPy",
-   Duration = 50,
-   Image = "folder-key",
-})
-
 -- Creating a window
 local Window = Rayfield:CreateWindow({
     Name = "FTFF Hub",
@@ -43,6 +35,14 @@ local Window = Rayfield:CreateWindow({
        Key = {"https://raw.githubusercontent.com/funthingsforfun/yek-reverse/refs/heads/main/lol"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
+
+ -- Discord notification
+Rayfield:Notify({
+   Title = "Join the discord for key!",
+   Content = "6XbyH95VPy",
+   Duration = 25,
+   Image = "folder-key",
+})
  
  -- Creating the script tab
  local ScriptTab = Window:CreateTab("Scripts", "code-2") -- Title, Image
